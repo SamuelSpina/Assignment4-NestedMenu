@@ -1,0 +1,130 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Subject List Styles */
+.subject {
+    background: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subject h3 {
+    cursor: pointer;
+    color: #35424a;
+    transition: color 0.3s ease;
+}
+
+.subject h3:hover {
+    color: #0066cc;
+}
+
+.topics {
+    display: none;
+    margin-top: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.topics.active {
+    display: block;
+}
+
+.topic {
+    background: #e2e2e2;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+.topic a {
+    text-decoration: none;
+    color: #35424a;
+}
+
+.topic a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+/* Topic Page Styles */
+main {
+    padding: 1rem;
+}
+
+.image-container {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 4px;
+}
+
+.image-caption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+#back-button {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    
+    img {
+        width: 100%;
+    }
+}
